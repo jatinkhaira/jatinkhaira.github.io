@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*//////////////////////*/
+/* GENERAL DECLARATIONS */
+/*//////////////////////*/
+
+body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/united-squares-negative.png");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #4aaaa5;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 540;
+  text-align: left;
+  line-height: 40px;
+  border-bottom: 4px solid #777777;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 15px;
+}
+
+p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-indent: 3em;
+  color: #777777;
+}
+
+div {
+  text-align: center;
+}
+
+/*/////////////*/
+/*HEADER LAYOUT*/
+/*/////////////*/
+
+.logo {
+  position: relative;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: 0.04em;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 1em;
+  width: auto;
+}
+
+.nav {
+  float: right;
+  margin-top: 30px;
+  width: 49%;
+  text-align: right;
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.nav ul li {
+  position: relative;
+  display: inline-block;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+.nav ul li a {
+  color: #777777;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: #ffffff;
+  background: #4aaaa5;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.nav ul li a.active {
+  color: black;
+}
+.nav ul li a.focus {
+  color: black;
+}
+
+.nav ul li + li {
+  border-left: 1px solid #cccccc;
+}
+
+header.header {
+  width: 960px;
+  background-color: #ffffff;
+  overflow: auto;
+  border-style: none none solid none;
+  border-bottom-color: #cccccc;
+  font-family: "Arial";
+  font-size: 18px;
+  color: #777777;
+}
+
+header {
+  width: 100%;
+  background: #ffffff;
+  margin: 0 auto;
+  color: #ffffff;
+  overflow: auto;
+  border-bottom: 2px solid #cccccc;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/*////////////////////////*/
+/* MAIN CONTAINER CONTENT */
+/*////////////////////////*/
+
+/*////////////////////*/
+/* INDEX.HTML CONTENT */
+/*////////////////////*/
+
+.container {
+  padding-top: 175px;
+  max-width: 960px;
+  margin: 0 auto 6em auto;
+  clear: both;
+}
+
+.main-section {
+  padding: 30px;
+  background-color: #ffffff;
+  overflow: auto;
+  margin: 0 0 40px 0;
+  width: 960px;
+  border: 1px solid #dddddd;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+/*////////////////////////*/
+/* PORTFOLIO.HTML CONTENT */
+/*////////////////////////*/
+
+.image-source {
+  width: 300px;
+  height: 200px;
+}
+
+.portfolio-item {
+  z-index: 0;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transition: transform 0.2 ease-out;
+}
+
+.portfolio-item:nth-child(even) {
+  margin-left: 25px;
+}
+
+.item-name {
+  position: absolute;
+  text-align: center;
+  background-color: #4aaaa5;
+  padding: 1em;
+  color: #ffffff;
+  z-index: 1;
+  border-bottom: 0;
+  opacity: 0.8;
+  bottom: 20px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/*////////////////////////*/
+/* CONTACT.HTML CONTENT */
+/*////////////////////////*/
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  border: 2px solid #cccccc;
+  margin-bottom: 3em;
+  padding: 1em;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: auto;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  color: #777777;
+  float: left;
+  padding: 0.6em;
+}
+
+/*////////////////*/
+/* FOOTER CONTENT */
+/*////////////////*/
+
+footer {
+  background-color: #666666;
+  padding: 20px 0;
+  clear: both;
+  color: #ffffff;
+  border-top: 8px solid #4aaaa5;
+  padding-bottom: 8em;
+  vertical-align: bottom;
+}
